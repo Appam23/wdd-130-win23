@@ -1,23 +1,25 @@
-main{
-    background-color: pink;
-}
-
-ol{
-    background-color: violet;
-    text-align: end;
-}
-main h1{
+img{
+    width: 50%;
     text-align: center;
-}
-main img{
     display: block;
     margin: 0 auto;
-    border: 1px solid black;
 }
-blockquote{
+body{
+    background-color: pink;
+}
+.header{
+   text-align: center; 
+}
+.div2{
+    margin-inline-start: 400px;
+    padding-inline-start: 40px;
+}
+p{
     text-align: center;
 }
-ol{
+h1:hover{
+    color: blueviolet;
+}
+h1{
     text-align: center;
 }
-
