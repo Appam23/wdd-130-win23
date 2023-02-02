@@ -70,7 +70,7 @@ h4{
     background-color: aqua;
 }
 .book:hover{
-    background-color: antiquewhite;
+    background-color: black;
 }
 .join:hover{
     background-color: bisque;
@@ -100,13 +100,13 @@ h4{
 color: bisque;   
 }
 .book{
-    color: blanchedalmond;
+    color: blueviolet;
 }
 .join{
     color: bisque;
 }
 .book:hover{
-    color: bisque;
+    color: blue;
 }
 .join:hover{
     color: bisque;
