@@ -23,3 +23,6 @@ main img{
     margin: 15px 30px;
 
 }
+body{
+    border: 10px solid whitesmoke;
+}
