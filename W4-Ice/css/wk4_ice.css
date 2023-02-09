@@ -1,5 +1,9 @@
 img{
+<<<<<<< HEAD:W4-Ice/css/wk4_ice.css
     width: 30%;
+=======
+    width: 50%;
+>>>>>>> dev:wwr/W4-Ice/css/wk4_ice.css
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -8,6 +12,7 @@ body{
     background-color: pink;
 }
 .header{
+<<<<<<< HEAD:W4-Ice/css/wk4_ice.css
     text-align: center;
 }
 .div2{
@@ -19,4 +24,20 @@ p{
 }
 h1:hover{
     color: blue;
+=======
+   text-align: center; 
+}
+.div2{
+    margin-inline-start: 400px;
+    padding-inline-start: 40px;
+}
+p{
+    text-align: center;
+}
+h1:hover{
+    color: blueviolet;
+}
+h1{
+    text-align: center;
+>>>>>>> dev:wwr/W4-Ice/css/wk4_ice.css
 }

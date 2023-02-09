@@ -1,18 +1,27 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Sofia+Sans&display=swap');
 
 
 
 
+=======
+>>>>>>> dev
 #content{
     max-width: 1600px;
     margin: 0 auto;
 }
 nav a{
     text-align: center;
+<<<<<<< HEAD
     background-color: aquamarine;
     color: black;
     text-decoration: none ;
     padding: 5px;
+=======
+    background-color: azure;
+    color: black;
+    text-decoration: none;
+>>>>>>> dev
 }
 #hero-msg h1{
     text-align: center;
@@ -27,37 +36,106 @@ main section{
     text-align: center;
 }
 #background {
+<<<<<<< HEAD
     background-color: antiquewhite;
     height: 725px;
 }
+=======
+    height: 725px;
+}
+body{
+    background-color: lightgreen;
+}
+>>>>>>> dev
 header{
     background-color: yellow;
 }
 nav a:hover{
     background-color: lightgreen;
+<<<<<<< HEAD
     color: #631a86;
 }
 .book:hover{
     background-color: wheat;
+=======
+}
+.book{
+    background-color: wheat;
+}
+.join{
+    background-color: whitesmoke;
+}
+.book:hover{
+    background-color: blue;
+>>>>>>> dev
 }
 .join:hover{
     background-color: pink;
 }
+<<<<<<< HEAD
 h4{
     background-color: white;
+=======
+#background{
+    background-color: papayawhip;
+}
+.msg{
+    background-color: white;
+}
+footer{
+    background-color: peachpuff;
+}
+nav a{
+    background-color: whitesmoke;
+    color: black;
+}
+nav a:hover{
+    background-color: aqua;
+    color: blue;
+}
+.home-title{
+    background-color: wheat;
+    color: black;
+}
+h4{
+    background-color: black;
+    color: white
+}
+.book{
+    background-color: whitesmoke
+    
+}
+.join{
+    background-color: blueviolet;
+    color: white;
+}
+.book:hover{
+    background-color: azure;
+>>>>>>> dev
     color: black;
 }
 .msg h2{
     background-color: white;
+<<<<<<< HEAD
     color: blue;
     font-family: "Sofia Sans";
+=======
+    color: blueviolet;
+>>>>>>> dev
 }
 .msg p{
     background-color: azure;
     color: black;
+<<<<<<< HEAD
     font-family: knewave, Helvetica, sans-serif;
     font-size: .8em;
     padding-bottom: 15px;
+=======
+}
+footer{
+    background-color: azure;
+    color: black;
+>>>>>>> dev
 }
 footer a{
     background-color: azure;
@@ -68,6 +146,7 @@ footer a:hover{
     color: blueviolet;
 }
 .logo{
+<<<<<<< HEAD
     width: 150px;
     border: 5px solid gainsboro;
     border-radius: 50%;
@@ -176,3 +255,22 @@ footer{
 main section img {
     box-sizing: border-box;
 }
+=======
+    width: 80px;
+}
+.icon{
+    width: 80px;
+}
+#hero-image{
+    width: 100%;
+}
+footer p {
+    font-size: 1.2em;
+}    
+footer p a:hover {
+    text-decoration: underline;
+}   
+
+
+
+>>>>>>> dev
