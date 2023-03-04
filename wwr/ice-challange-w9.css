@@ -1,0 +1,13 @@
+body{
+    border-radius: 20%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: blue;
+}
+h6{
+    color: blue;
+}

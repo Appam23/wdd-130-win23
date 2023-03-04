@@ -14,7 +14,7 @@ nav {
 
 nav a{
     text-align: center;
-    background-color: transparent;
+    background-color:transparent;
     color: black;
     text-decoration: none ;
     padding: 5px;
@@ -281,5 +281,10 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+/* Adding style for rivers.html page */
+
+
+
+
              
 
