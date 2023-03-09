@@ -39,7 +39,12 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 50%;
+
+}
+.smile-img{
+  border: 5px solid #e93720;
+  border-radius: 50%;
 
 }
 h1, h2, h3, h4, h5, h6 {
