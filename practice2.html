@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2-grid</title>
+    <style>
+        .home-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+        video{
+            width: 100px;
+            height: 50px;
+            grid-template-columns: 1/3;
+            grid-row: 1/2;
+        }
+        h1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            z-index: 1;
+            align-self: center;
+        }
+        aside{
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home-grid">
+        <video class="my-video" autoplay muted>
+            <source src="video/culturaldance.mp4">
+            type="video/mp4"
+        </video>
+        <h1 class="multiculturalism">Various cultures of India</h1>
+        <aside class="visit_us" >
+            <img src="click&connect/image/culture.jpeg" alt="cultural-dress">
+            <h2>Visit Us</h2>
+            <p>Majastic historical buildings, different cultures, peacfull environment and spicy foods.</p>
+        </aside>
+        <img class="icon1" src="click&connect/image/Himalaya.jpeg" alt="himalaya">
+        <img class="icon2" src="click&connect/image/food2.png" alt="food">
+
+
+    </div>
+</body>
+</html>
