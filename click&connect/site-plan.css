@@ -40,8 +40,14 @@ img {
   display: block;
   margin: 0 auto;
 }
+.taj{
+  border-radius: 50%;
+}
+.qutup{
+  border-radius: 50%;
+}
 .image1{
-border-radius: 10%;
+border-radius: 50%;
 }
 .image2{
   border-radius: 50%;
