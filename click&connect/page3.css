@@ -1,0 +1,74 @@
+
+header{
+    display: grid;
+    grid-template-columns: 70px auto;
+    background-color: whitesmoke;    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    text-decoration: none ;
+    padding: 5px;
+    display: block;
+}
+nav a:hover{
+    background-color: transparent;
+    color: blue;
+}
+.logo{
+    width: 150px;
+    border: 2px solid red;
+    border-radius: 50%;
+    z-index: 9999;
+}
+        .pictures {
+    background-color: aliceblue;
+    width: 95%;
+    margin: 50px auto;
+    color: blue;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: repeat(3, 1fr) 100px;
+} 
+.item2 { background-color: brown;}
+.item3 { background-color: antiquewhite;}
+.item4 { background-color: brown;}
+.item5 { background-color: yellow;
+grid-column: 4/5;
+grid-row: 1/4;
+}
+.item6 { background-color: yellowgreen;
+grid-column: 1/4;
+grid-row: 2/4;
+}
+footer{
+    background-color: gainsboro;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    background-color: transparent;
+    color: rgb(21, 20, 21);
+    text-decoration: underline;
+    font-size: .9em;
+    font-family: 'Times New Roman', Times, serif
+}
+footer p:hover{
+    background-color: transparent;
+    color: blueviolet;
+}
+
+    
