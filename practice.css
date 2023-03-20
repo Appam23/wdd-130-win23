@@ -1,40 +1,112 @@
+
+header{
+    display: grid;
+    grid-template-columns: 70px auto;
+    background-color: pink;    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    text-decoration: none ;
+    padding: 20px;
+    display: block;
+}
+nav a:hover{
+    background-color: transparent;
+    color: blueviolet;
+}
+.logo{
+    width: 150px;
+    border-radius: 50%;
+    z-index: 9999;
+}
+:root {
+    --heading-font: "Lobster Two";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+}
 .pictures3 {
     background-color: aliceblue;
-    width: 75%;
+    width: 90%;
     margin: 50px auto;
     color: blue;
     text-align: center;
     display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 100px 100px 200px 100px;
-    grid-template-columns: repeat(3, 1fr) 100px;
+    grid-gap: 10px;
+    
+    grid-template-columns: repeat(3, 1fr);
 }
 .item--1 { background-color: antiquewhite;
 grid-column: 1/5;
 border-radius: 10%;
 }
+.pimage1 {
+    border-radius: 50%;
+}
     
 .item--2 { background-color: brown;
-border-radius: 50%;
+border-radius: 10%;
 }
-.item--3 { background-color: antiquewhite;
+.pimage2 {
     border-radius: 50%;
+}
+
+
+.item--3 { background-color: antiquewhite;
+    border-radius: 10%;
 }
 .item--4 { background-color: brown;
-    border-radius: 50%;
+    border-radius: 10%;
+
 }
 .item--5 { background-color: yellow;
-grid-column: 4/5;
-grid-row: 2/4;
+
 border-radius: 10%;
 }
 .item--6 { background-color: yellowgreen;
-grid-column: 1/4;
-grid-row: 3/4;
+
 border-radius: 20%;
 }
 .item--7 {background-color: red;
-grid-column: 2/4;
+
 border-radius: 10%;
 }
+.item--8 {background-color: whitesmoke;
+border-radius: 10%;
+    }
+    .pimage8 {
+        border-radius: 20px;
+        border: 1px solid salmon;
+    }
+
+footer{
+    background-color: rgb(237, 87, 87);
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    font-style: italic;
+    font-size: 1em;
+}    
+footer p a:hover {
+    text-decoration: underline;
+    
+}
+h3 {
+    color: black;
+}
+
+    
+
+    
 
