@@ -51,7 +51,7 @@ nav a{
     padding: 20px;
     display: block;
 }
-nav a h1:hover{
+nav a:hover{
     background-color: transparent;
     color: blueviolet;
 }
