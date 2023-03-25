@@ -152,10 +152,7 @@ img:hover {
     border-radius: 50%;
     border: 1px solid black;
 }
-{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-  }
+
   
   * {
     box-sizing: border-box;
@@ -163,6 +160,7 @@ img:hover {
   
   /* Add padding to containers */
   .container {
+    border: 1px solid black;
     padding: 16px;
     background-color: white;
   }
