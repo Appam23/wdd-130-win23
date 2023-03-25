@@ -160,6 +160,7 @@ img:hover {
   
   /* Add padding to containers */
   .container {
+    border-radius: 20px;
     border: 3px solid black;
     padding: 16px;
     background-color: white;
