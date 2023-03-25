@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="practice.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="practice.css">
+  <title>Debbie</title>
 </head>
+<script>
+  function initComparisons() {
+    var x, i;
+    /*find all elements with an "overlay" class:*/
+    x = document.getElementsByClassName("img-comp-overlay");
+    for (i = 0; i < x.length; i++) {
+      /*once for each "overlay" element:
+      pass the "overlay" element as a parameter when executing the compareImages function:*/
+      compareImages(x[i]);
+    }
+    function compareImages(img) {
+      var slider, img, clicked = 0, w, h;
+      /*get the width and height of the img element*/
+      w = img.offsetWidth;
+      h = img.offsetHeight;
+      /*set the width of the img element to 50%:*/
+      img.style.width = (w / 2) + "px";
+      /*create slider:*/
+      slider = document.createElement("DIV");
+      slider.setAttribute("class", "img-comp-slider");
+      /*insert slider*/
+      img.parentElement.insertBefore(slider, img);
+      /*position the slider in the middle:*/
+      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+      /*execute a function when the mouse button is pressed:*/
+      slider.addEventListener("mousedown", slideReady);
+      /*and another function when the mouse button is released:*/
+      window.addEventListener("mouseup", slideFinish);
+      /*or touched (for touch screens:*/
+      slider.addEventListener("touchstart", slideReady);
+      /*and released (for touch screens:*/
+      window.addEventListener("touchend", slideFinish);
+      function slideReady(e) {
+        /*prevent any other actions that may occur when moving over the image:*/
+        e.preventDefault();
+        /*the slider is now clicked and ready to move:*/
+        clicked = 1;
+        /*execute a function when the slider is moved:*/
+        window.addEventListener("mousemove", slideMove);
+        window.addEventListener("touchmove", slideMove);
+      }
+      function slideFinish() {
+        /*the slider is no longer clicked:*/
+        clicked = 0;
+      }
+      function slideMove(e) {
+        var pos;
+        /*if the slider is no longer clicked, exit this function:*/
+        if (clicked == 0) return false;
+        /*get the cursor's x position:*/
+        pos = getCursorPos(e)
+        /*prevent the slider from being positioned outside the image:*/
+        if (pos < 0) pos = 0;
+        if (pos > w) pos = w;
+        /*execute a function that will resize the overlay image according to the cursor:*/
+        slide(pos);
+      }
+      function getCursorPos(e) {
+        var a, x = 0;
+        e = (e.changedTouches) ? e.changedTouches[0] : e;
+        /*get the x positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x coordinate, relative to the image:*/
+        x = e.pageX - a.left;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        return x;
+      }
+      function slide(x) {
+        /*resize the image:*/
+        img.style.width = x + "px";
+        /*position the slider:*/
+        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      }
+    }
+  }
+  </script>
 <body>
-  <header>
-    <img class="logo" src="pimages/pimage9.png" alt="Logo Image">
-<nav>
-    <a href="">My Home Alaska</a>
-    <a href="./page2.html">My Gym</a> 
-    <a href="./page3.html">Foods</a>
-</nav>
-</header>
-    <div class="pictures3">
+  
+<h1>Compare Two Images</h1>
 
-      <div class="item--1"> <h3>My Eternal Family</h3>
-        <img class="pimage1" src="pimages/pimage1.jpeg" >
-        <p>
-          Me and my aunt waiting to get her temple recommend :)
-        </p>
-      </div> 
-      <div class="item--2"><h3>Me after workout</h3>
-      <img class="pimage2" src="pimages/pimage2.jpeg">  
-      </div>
-      <div class="item--3"> <h3>What? You wanna kiss me :)</h3>
-        <img class="pimage2" src="pimages/pimage4.jpeg"> 
-      </div>
-      
-      <div class="item--7"><h3>Yep it's me</h3>
-        <img class="pimage2" src="pimages/pimage7.jpeg"> 
-      </div>
+<p>Click and slide the blue slider to compare two images:</p>
 
-      <div class="item--5"><h3>My backyard</h3>
-        <img class="pimage2" src="pimages/pimage5.jpeg">  </div>
-        
-        <div class="item--4"><h3>My daily Nutritions</h3>
-          <img class="pimage2" src="pimages/pimage3.jpeg"> 
-        </div>
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="pimages/pimage2.png" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="pimages/pimage11.png" width="300" height="200">
+  </div>
+</div>
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0vDFj9Rba0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
-        <div class="item--6"><h3>When I make spaghetti</h3>
-        <img class="pimage2" src="pimages/pimage6.jpeg"> 
-      </div>
-      <div class="item--8"><h3>You are always the best</h3>
-        <img class="pimage8" src="pimages/pimage10.jpeg"> 
-      </div>
-      
-            
-    </div>
-    <footer>
-      <p>Photography &copy; 2023 - Appam Leisan</p>
-      
-      <div class="social">
-          <a href="https://facebook.com" target="_blank">
-              <img src="./wwr/images/facebook.png" alt="fb icon">
-          </a>
-          <a href="https://Whatapp.com" target="_blank">
-              <img src="./click&connect/image/Whatapp.jpg" alt="Whatapp icon">
-          </a>
-          <a href="https://instagram.com" target="_blank">
-              <img src="./wwr/images/instagram.png" alt="instagram icon">
-          </a>
-      </div>
-  </footer>
-    
+<script>
+  /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+  initComparisons();
+  </script>
 </body>
 </html>

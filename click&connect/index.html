@@ -17,7 +17,24 @@
         <a href="./page3.html">Foods</a>
     </nav>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Welcome</span>
+
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
       
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
     <div class="pictures">
 
         <div class="picture2"> <h3>The Taj Mahal</h3>
@@ -95,5 +112,6 @@
             </a>
         </div>
     </footer>
+
 </body>
 </html>
