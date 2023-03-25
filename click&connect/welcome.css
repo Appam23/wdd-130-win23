@@ -160,9 +160,18 @@ img:hover {
   
   /* Add padding to containers */
   .container {
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 16px;
     background-color: white;
+  }
+  h1{
+    color: darkslateblue;
+  }
+  p{
+    color: cornflowerblue;
+  }
+  label{
+    color: darkblue;
   }
   
   /* Full-width input fields */
