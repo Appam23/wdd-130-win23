@@ -10,12 +10,13 @@
         :root{
         --heading-font: "Lobster Two";
         --paragraph-font: Lato, Helvetica, sans-serif;
-    }
+        }   
         h1, h2, a {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
-  }
+            }
         h1{
+            grid-column: 2/3;
             color: green;
             text-align: center;
         }
@@ -31,25 +32,71 @@
         a:hover{
             color: rgb(242, 55, 148);
         }
-        .Me{
+        body{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        .Me{
+            grid-column: 2/3;
+            position: relative;
+            width: 50%;
+            justify-self: center;
         }
         .Me1{
             border-radius: 10px;
             border: 1px solid black ;
             grid-column: 2/3;
             justify-self: center;
+            display: block;
+            width: 99%;
+            height: auto;
         }
-    
-        
-        
-    </style>
+   
+        a{
+            grid-column: 2/3;
+            justify-self: center;
+        }
+
+
+        .overlay {
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .Me:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }        
+ </style>
 </head>
 <body>
+    
 <h1>Welcome to Appam Leisan WDD Home Work</h1>
 <div class="Me" >
-<img class="Me1" src="./click&connect/image/Me.jpeg" alt="Appam's headshot">
+<img class="Me1" src="pimages/Appam.jpg" alt="Appam's headshot">
+<div class="overlay">
+    <div class="text">Welcome to Leisan's WWD-130 H/W Webpage</div>
+  </div>
 </div>
 <a href="./wwr/ice-challanges/W4-Ice/about-me.html">i) About-me</a>
 <a href="./wwr/site-plan.html">ii) Site Plan</a>
