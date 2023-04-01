@@ -3,25 +3,25 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #f7e812;
-  --secondary-color: #43e023 ;
-  --accent1-color: #e93720;
-  --accent2-color: white;
+  --primary-color: #E7C24F;
+  --secondary-color:#40A312;
+  --accent1-color: #131112;
+  --accent2-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Lobster Two";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #282722;  /* headlines on a white background */ 
-  --headline-color-on-color: rgb(76, 49, 139); /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: rgb(67, 18, 119); /* paragraph text on a colored background */ 
-  --paragraph-background-color: #f2e03e  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #131112;  /* headlines on a white background */ 
+  --headline-color-on-color:  #FFFFFF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #131112; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #131112; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #E7C24F ;
+  --nav-link-color: #131112;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #131112;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-header{
+  header{
     display: grid;
     grid-template-columns: 70px auto;
-    background-color: rgba(255, 255, 0, 0.806);    
+    background-color: #E7C24F;    
 }
 nav {
     display: flex;
@@ -50,7 +50,7 @@ nav a{
 }
 nav a:hover{
     background-color: transparent;
-    color: blueviolet;
+    color: #40A312;
 }
 .logo{
     width: 150px;
@@ -60,10 +60,10 @@ nav a:hover{
 }
 
 .pictures2 {
-    background-color: aliceblue;
+    background-color: #FFFFFF;
     width: 95%;
     margin: 50px auto;
-    color: blue;
+    color: #40A312;
     text-align: center;
     display: grid;
     grid-gap: 10px;
@@ -71,7 +71,7 @@ nav a:hover{
     grid-template-columns: repeat(4, 1fr);
 }
 .item-1 { 
-    background-color: azure;
+    background-color: #FFFFFF;
     border-radius: 10px;
 grid-column: 1/5;
 }
@@ -79,23 +79,23 @@ h1{
     text-align: center;
 }
 h1:hover{
-    color: blueviolet;
+    color: #40A312;
 }
 .pic1{
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid #131112;
 }
 .pic2{
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid #131112;
 }
 .pic3{
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid #131112;
 } 
 .pic4{
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid #131112;
 }   
 
 
@@ -118,33 +118,31 @@ h1:hover{
         width: 99%;
         height: 80%;
         border-radius: 40px;
-        border: 3px solid red;
+        border: 3px solid #131112;
 
     }
 
-
-
-footer{
-    background-color: gainsboro;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer p{
-    background-color: transparent;
-    color: rgb(21, 20, 21);
-    text-decoration: underline;
-    font-size: .9em;
-    font-family: 'Times New Roman', Times, serif
-}
-footer p:hover{
-    background-color: transparent;
-    color: blueviolet;
-}
+    footer{
+        background-color: #131112;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer p{
+        background-color: #131112;
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-size: .9em;
+        font-family: 'Times New Roman', Times, serif
+    }
+    footer p:hover{
+        background-color: transparent;
+        color: #40A312;
+    }
 
     

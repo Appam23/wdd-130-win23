@@ -4,25 +4,25 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #f7e812;
-  --secondary-color: #43e023 ;
-  --accent1-color: #e93720;
-  --accent2-color: white;
+  --primary-color: #E7C24F;
+  --secondary-color:#40A312;
+  --accent1-color: #131112;
+  --accent2-color: #FFFFFF;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Lobster Two";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #282722;  /* headlines on a white background */ 
-  --headline-color-on-color: rgb(76, 49, 139); /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: rgb(67, 18, 119); /* paragraph text on a colored background */ 
-  --paragraph-background-color: #f2e03e  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #131112;  /* headlines on a white background */ 
+  --headline-color-on-color:  #FFFFFF; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #131112; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #131112; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #E7C24F ;
+  --nav-link-color: #131112;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #131112;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -31,13 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   h2 {
     text-align: center;
   }
- body{
-    background-color: aliceblue;
- }
- header{
+
+  header{
     display: grid;
     grid-template-columns: 70px auto;
-    background-color: rgba(255, 255, 0, 0.806);    
+    background-color: #E7C24F;    
 }
 nav {
     display: flex;
@@ -53,7 +51,7 @@ nav a{
 }
 nav a:hover{
     background-color: transparent;
-    color: blueviolet;
+    color: #40A312;
 }
 .logo{
     width: 150px;
@@ -70,7 +68,7 @@ nav a:hover{
     z-index: 9999; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: whitesmoke; /* Black*/
+    background-color: #FFFFFF; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -88,7 +86,7 @@ nav a:hover{
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: blueviolet;
+    color: #131112;
   }
   
   /* Position and style the close button (top right corner) */
@@ -125,7 +123,7 @@ nav a:hover{
 .picture1 { 
     width: 90%;
     display: block;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .India{
     width: 100%;
@@ -143,7 +141,7 @@ nav a:hover{
 .picture2 { 
     width: 90%;
     display: block;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .tajj {
     width: 100%;
@@ -166,7 +164,7 @@ nav a:hover{
 .picture3 { 
     width: 90%;
     display: block;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .Qutup {
     width: 100%;
@@ -185,7 +183,7 @@ nav a:hover{
 .picture4 { 
     width: 90%;
     display: block;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .culture {
     width: 100%;
@@ -217,19 +215,15 @@ nav a:hover{
 .picture5 { 
     width: 90%;
     display: block;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .culture1_info > p {
     margin-top: 0%;
 }
 
-.item6 { background-color: yellowgreen;
-grid-column: 1/4;
-grid-row: 3/4;
-}
 footer{
-    background-color: gainsboro;
-    color: black;
+    background-color: #131112;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -239,15 +233,15 @@ footer{
     align-items: center;
 }
 footer p{
-    background-color: transparent;
-    color: rgb(21, 20, 21);
+    background-color: #131112;
+    color: #FFFFFF;
     text-decoration: underline;
     font-size: .9em;
     font-family: 'Times New Roman', Times, serif
 }
 footer p:hover{
     background-color: transparent;
-    color: blueviolet;
+    color: #40A312;
 }
 
     
