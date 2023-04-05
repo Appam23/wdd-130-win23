@@ -15,7 +15,7 @@
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #131112;  /* headlines on a white background */ 
   --headline-color-on-color:  #FFFFFF; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #131112; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #40A312; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #131112; /* paragraph text on a colored background */ 
   --paragraph-background-color: #E7C24F ;
   --nav-link-color: #131112;
@@ -30,11 +30,15 @@ h1, h2, h3, h4, h5, h6 {
   h2 {
     text-align: center;
   }
+  .item-1 p{
+    color: #40A312;
+  }
 
   header{
     display: grid;
     grid-template-columns: 70px auto;
-    background-color: #E7C24F;    
+    background-color: #E7C24F;  
+    border-radius: 10px;  
 }
 nav {
     display: flex;
@@ -132,6 +136,7 @@ h1:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-radius: 10px;
     }
     footer p{
         background-color: #131112;
